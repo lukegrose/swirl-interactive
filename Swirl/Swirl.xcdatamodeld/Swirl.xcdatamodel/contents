@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Chapter" representedClassName="Chapter" syncable="YES">
+        <attribute name="anchor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ebook" representedClassName="Ebook" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="basePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="epubName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Chapter" syncable="YES"/>
+    </entity>
+    <entity name="Word" representedClassName="Word" syncable="YES">
+        <attribute name="choice1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="choice2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="choice3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaningComplete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="spellingComplete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="WordList" representedClassName="WordList" syncable="YES">
+        <attribute name="basePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipOrigin" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Word" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Chapter" positionX="99" positionY="225" width="128" height="90"/>
+        <element name="Ebook" positionX="358" positionY="126" width="128" height="135"/>
+        <element name="Word" positionX="-63" positionY="198" width="128" height="150"/>
+        <element name="WordList" positionX="-306" positionY="207" width="128" height="105"/>
+    </elements>
+</model>
