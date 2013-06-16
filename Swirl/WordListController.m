@@ -13,7 +13,7 @@
 #import "WordListDetailController.h"
 #import "EpubChapterController.h"
 #import "Flurry.h"
-#import "SFHFKeychainUtils.h"
+//#import "SFHFKeychainUtils.h"
 #import "SwirlProduct.h"
 
 @interface WordListController ()
@@ -359,7 +359,7 @@
                 [tmp show];
                                 
                 NSError *error = nil;
-                [SFHFKeychainUtils storeUsername:@"IAPNoob01" andPassword:@"whatever" forServiceName:kStoredData updateExisting:YES error:&error];
+//                [SFHFKeychainUtils storeUsername:@"IAPNoob01" andPassword:@"whatever" forServiceName:kStoredData updateExisting:YES error:&error];
                 
                 // apply purchase action  - hide lock overlay and
                 //lgrose, not sure what this is needed for...yet

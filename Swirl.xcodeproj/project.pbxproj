@@ -200,17 +200,8 @@
 		F6E06FEF173C4FD60047BA75 /* SwirlProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06FEE173C4FD60047BA75 /* SwirlProduct.m */; };
 		F6E3049916DFFC4700F39732 /* icon_72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F6E3049816DFFC4700F39732 /* icon_72x72.png */; };
 		F6E3049B16DFFCA100F39732 /* icon_144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = F6E3049A16DFFCA100F39732 /* icon_144x144.png */; };
-		F6EFE7AD173078DE00B2F1C0 /* Padlock_Icon_64.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7A5173078DE00B2F1C0 /* Padlock_Icon_64.png */; };
-		F6EFE7AE173078DE00B2F1C0 /* Padlock_Icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7A6173078DE00B2F1C0 /* Padlock_Icon_72.png */; };
-		F6EFE7AF173078DE00B2F1C0 /* Padlock_Icon_96.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7A7173078DE00B2F1C0 /* Padlock_Icon_96.png */; };
-		F6EFE7B0173078DE00B2F1C0 /* Padlock_Icon_16.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7A8173078DE00B2F1C0 /* Padlock_Icon_16.png */; };
-		F6EFE7B1173078DE00B2F1C0 /* Padlock_Icon_32.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7A9173078DE00B2F1C0 /* Padlock_Icon_32.png */; };
-		F6EFE7B2173078DE00B2F1C0 /* Padlock_Icon_48.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7AA173078DE00B2F1C0 /* Padlock_Icon_48.png */; };
-		F6EFE7B3173078DE00B2F1C0 /* Padlock_Icon_128.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7AB173078DE00B2F1C0 /* Padlock_Icon_128.png */; };
-		F6EFE7B4173078DE00B2F1C0 /* Padlock_Icon_256.png in Resources */ = {isa = PBXBuildFile; fileRef = F6EFE7AC173078DE00B2F1C0 /* Padlock_Icon_256.png */; };
 		F6EFF18E173AF431006AB74D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EFF18D173AF431006AB74D /* StoreKit.framework */; };
-		F6EFF191173AF662006AB74D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EFF190173AF662006AB74D /* Security.framework */; };
-		F6EFF194173AF6AD006AB74D /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EFF193173AF6AD006AB74D /* SFHFKeychainUtils.m */; };
+		F6EFF191173AF662006AB74D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EFF190173AF662006AB74D /* Security.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F6F012B317272ED70044D063 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F012B017272ED70044D063 /* HTMLNode.m */; };
 		F6F012B417272ED70044D063 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F012B217272ED70044D063 /* HTMLParser.m */; };
 		F6F012B6172731280044D063 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F012B5172731280044D063 /* libxml2.dylib */; };
@@ -941,14 +932,6 @@
 				F685BD6217032A00008DFFC1 /* icon_128x128.png in Resources */,
 				F685BD6317032A00008DFFC1 /* icon_256x256.png in Resources */,
 				F64278C717046D4F00AA197B /* Flurry in Resources */,
-				F6EFE7AD173078DE00B2F1C0 /* Padlock_Icon_64.png in Resources */,
-				F6EFE7AE173078DE00B2F1C0 /* Padlock_Icon_72.png in Resources */,
-				F6EFE7AF173078DE00B2F1C0 /* Padlock_Icon_96.png in Resources */,
-				F6EFE7B0173078DE00B2F1C0 /* Padlock_Icon_16.png in Resources */,
-				F6EFE7B1173078DE00B2F1C0 /* Padlock_Icon_32.png in Resources */,
-				F6EFE7B2173078DE00B2F1C0 /* Padlock_Icon_48.png in Resources */,
-				F6EFE7B3173078DE00B2F1C0 /* Padlock_Icon_128.png in Resources */,
-				F6EFE7B4173078DE00B2F1C0 /* Padlock_Icon_256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,7 +1019,6 @@
 				F6203BF316B480A100F96672 /* SplashViewController.m in Sources */,
 				F6F012B317272ED70044D063 /* HTMLNode.m in Sources */,
 				F6F012B417272ED70044D063 /* HTMLParser.m in Sources */,
-				F6EFF194173AF6AD006AB74D /* SFHFKeychainUtils.m in Sources */,
 				F6E06FEF173C4FD60047BA75 /* SwirlProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
