@@ -13,6 +13,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "Flurry.h"
+#import <TargetConditionals.h>
 
 @implementation AppDelegate
 
@@ -20,10 +21,24 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     //[Flurry startSession:@"CX453NHVD2B446J3V8JZ"]; // Swirl Interactive
     //[Flurry startSession:@"ZBNNZ7Q3N7NF5RWG5SSH"]; // Swirl Interactive - PROD
+    
+    BOOL deannasIpad = [@"Deanna's iPad" isEqualToString:[[UIDevice currentDevice] name]];
+    
+    if ( TARGET_IPHONE_SIMULATOR || deannasIpad ) {
+        
+        NSLog(@"Running in simulator, Deanna's iPad as test or installed on Deanna's iPad from app store");
+        [Flurry startSession:@"CX453NHVD2B446J3V8JZ"]; // Swirl Interactive
+        
+    } else {
+      
+        [Flurry startSession:@"ZBNNZ7Q3N7NF5RWG5SSH"]; // Swirl Interactive - PROD
+        
+    }
+    
     [Flurry logAllPageViews:_navigationController];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

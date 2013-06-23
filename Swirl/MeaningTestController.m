@@ -56,6 +56,8 @@
         NSLog(@"%@", [error description]);
     }
     
+    //It looks like the max length of the word.meaning before it goes
+    //off the page is about 56 characters (give or take the fixed width effects)
     self.data = [NSMutableArray array];
     [data addObject:word.meaning];
     [data addObject:word.choice1];
