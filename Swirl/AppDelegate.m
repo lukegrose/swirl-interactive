@@ -26,7 +26,7 @@
     //[Flurry startSession:@"CX453NHVD2B446J3V8JZ"]; // Swirl Interactive
     //[Flurry startSession:@"ZBNNZ7Q3N7NF5RWG5SSH"]; // Swirl Interactive - PROD
     
-    BOOL deannasIpad = [@"Deanna's iPad" isEqualToString:[[UIDevice currentDevice] name]];
+    BOOL deannasIpad = [@"Deanna’s iPad" isEqualToString:[[UIDevice currentDevice] name]];
     
     if ( TARGET_IPHONE_SIMULATOR || deannasIpad ) {
         
