@@ -35,6 +35,7 @@
         
     } else {
       
+        NSLog(@"Running on device");
         [Flurry startSession:@"ZBNNZ7Q3N7NF5RWG5SSH"]; // Swirl Interactive - PROD
         
     }

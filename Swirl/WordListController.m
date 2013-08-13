@@ -76,9 +76,16 @@
     //Dolch Grade 2
     SwirlProduct *grade2 = [[SwirlProduct alloc] initWithProductName:@"Dolch Grade 2"
                                                            productId: kProductIdentifierDolchPrimer
-                                                           available: NO];
+                                                           available: YES];
     
     [self.products setValue:grade2 forKey:grade2.productName];
+    
+    //Dolch Grade 3
+    SwirlProduct *grade3 = [[SwirlProduct alloc] initWithProductName:@"Dolch Grade 3"
+                                                           productId: kProductIdentifierDolchPrimer
+                                                           available: YES];
+    
+    [self.products setValue:grade3 forKey:grade3.productName];
     
 }
 
@@ -115,7 +122,13 @@
     
     NSError *error = nil;
 	NSArray *_list = [context executeFetchRequest:fetchRequest error:&error];
-    self.wordLists = [NSMutableArray arrayWithArray:_list];
+    
+    NSMutableArray* tempWordLists = [[NSMutableArray alloc] init];
+    tempWordLists = [NSMutableArray arrayWithArray:_list];
+    [tempWordLists sortUsingSelector:@selector(compare:)];
+    self.wordLists = tempWordLists;
+    
+    //self.wordLists = [NSMutableArray arrayWithArray:_list];
 }
 
 - (void)didReceiveMemoryWarning
